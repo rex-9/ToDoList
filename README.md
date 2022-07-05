@@ -26,7 +26,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Deployment
 
-Here is the online version of [To Do List](https://github.com/HtetNaing0814/to-do-list/)
+Here is the online version of [To Do List](https://htetnaing0814.github.io/to-do-list/)
 
 ## Author
 👤 - Github: [@HtetNaing0814](https://github.com/HtetNaing0814/to-do-list/)
