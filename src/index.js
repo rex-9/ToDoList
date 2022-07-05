@@ -1,6 +1,6 @@
 import './style.css';
 
-let rawTasks = [{
+const rawTasks = [{
   index: 0,
   completed: true,
   description: 'wash the dishes',
@@ -8,18 +8,18 @@ let rawTasks = [{
   index: 1,
   completed: false,
   description: 'complete To Do list project',
-}, ]
+}];
 
-let tasks = rawTasks.sort((a, b) => a.index - b.index);
+const tasks = rawTasks.sort((a, b) => a.index - b.index);
 
-tasks.forEach(task => {
-  let li = document.createElement('li');
-  let div = document.createElement('div');
-  div.style.cssText = "display: flex; padding-left: 10px;";
-  let input = document.createElement('input');
+tasks.forEach((task) => {
+  const li = document.createElement('li');
+  const div = document.createElement('div');
+  div.style.cssText = 'display: flex; padding-left: 10px;';
+  const input = document.createElement('input');
   input.type = 'checkbox';
-  input.style.cssText = "cursor: pointer;";
-  let p = document.createElement('p');
+  input.style.cssText = 'cursor: pointer;';
+  const p = document.createElement('p');
   p.innerHTML = task.description;
   // let img = document.createElement('img');
   // img.src = '/assets/move.png';

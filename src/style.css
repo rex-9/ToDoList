@@ -10,7 +10,7 @@ body {
   justify-content: center;
   border: 2px solid gainsboro;
   margin: 5% 20% 5% 20%;
-  box-shadow: 5px 8px 8px #888888;
+  box-shadow: 5px 8px 8px #888;
 }
 
 #paper {
@@ -34,7 +34,7 @@ body {
 
 #add {
   width: 97.7%;
-  border: 0px;
+  border: 0;
   padding: 15px;
   font-size: 18px;
   font-style: italic;
@@ -45,10 +45,10 @@ body {
 }
 
 ul {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
   list-style-type: none;
-  padding: 0px;
+  padding: 0;
 }
 
 li {
@@ -69,15 +69,16 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
 footer:hover {
   background-color: gainsboro;
+}
+
+svg {
+  cursor: pointer;
 }
 
 #input svg {
   transform: scaleX(-1);
   margin-right: 13px;
-}
-
-svg {
-  cursor: pointer;
 }
