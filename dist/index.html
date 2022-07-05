@@ -9,20 +9,22 @@
 <script defer src="main.js"></script></head>
 
 <body>
-    <div id="myDIV" class="header">
-        <h2>My To Do List</h2>
-        <input type="text" id="myInput" placeholder="Title...">
-        <span onclick="newElement()" class="addBtn">Add</span>
+    <div id="card">
+        <div id="paper">
+            <div id="header">
+                <header>Today's To Do</header>
+                <button><img src="../assets/refresh.svg" alt="refresh"></button>
+            </div>
+            <div id="input">
+                <input id="add" type="text" placeholder="Add to your list...">
+                <img src="/assets/enter.png" alt="enter">
+            </div>
+            <ul id="list">
+                <!-- Tasks go here -->
+            </ul>
+            <footer>Clear all completed</footer>
+        </div>
     </div>
-
-    <ul id="myUL">
-        <li>Hit the gym</li>
-        <li class="checked">Pay bills</li>
-        <li>Meet George</li>
-        <li>Buy eggs</li>
-        <li>Read a book</li>
-        <li>Organize office</li>
-    </ul>
 </body>
 
 </html>
