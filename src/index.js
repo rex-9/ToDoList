@@ -11,12 +11,8 @@ let tasks = [];
 
 const paper = document.getElementById('paper');
 
-if (allTasks.length === 0 || allTasks === null) {
+if (allTasks === null || allTasks.length === 0) {
   tasks = [];
-  if (paper.childNodes.length > 7) {
-    const footer = document.getElementById('remove');
-    paper.removeChild(footer);
-  }
 } else {
   tasks = allTasks.sort((a, b) => a.index - b.index);
   const footer = document.createElement('footer');
