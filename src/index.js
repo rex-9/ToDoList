@@ -1,32 +1,72 @@
 import './style.css';
+import {
+  addTask, editTask, toggleTask, removeTask,
+} from './modules/crud.js';
 
-const rawTasks = [{
-  index: 0,
-  completed: true,
-  description: 'wash the dishes',
-}, {
-  index: 1,
-  completed: false,
-  description: 'complete To Do list project',
-}];
+const allTasks = JSON.parse(localStorage.getItem('tasks'));
+let tasks = [];
 
-const tasks = rawTasks.sort((a, b) => a.index - b.index);
+const paper = document.getElementById('paper');
+
+if (allTasks === null) {
+  tasks = [];
+  if (paper.childNodes.length < 4) {
+    const footer = document.getElementById('remove');
+    paper.removeChild(footer);
+  }
+} else {
+  tasks = allTasks.sort((a, b) => a.index - b.index);
+  const footer = document.createElement('footer');
+  footer.id = 'remove';
+  footer.innerHTML = 'Clear all completed';
+  footer.onclick = removeTask;
+  paper.appendChild(footer);
+}
+
+const add = document.getElementById('add');
+add.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    addTask(add.value);
+    add.value = '';
+  }
+});
 
 tasks.forEach((task) => {
   const li = document.createElement('li');
   const div = document.createElement('div');
   div.style.cssText = 'display: flex; padding-left: 10px;';
-  const input = document.createElement('input');
-  input.type = 'checkbox';
-  input.style.cssText = 'cursor: pointer;';
+  const checkbox = document.createElement('input');
+  checkbox.type = 'checkbox';
+  checkbox.style.cssText = 'cursor: pointer;';
+  checkbox.checked = task.completed;
+  checkbox.addEventListener('change', () => {
+    if (checkbox.checked) {
+      toggleTask(task.index, true);
+      li.style.cssText = 'text-decoration: line-through; background-color: gainsboro;';
+    } else {
+      toggleTask(task.index, false);
+      li.style.cssText = 'text-decoration: none; background-color: white;';
+    }
+  });
   const p = document.createElement('p');
   p.innerHTML = task.description;
-  // let img = document.createElement('img');
-  // img.src = '/assets/move.png';
-  // img.alt = 'move';
-  div.appendChild(input);
+  div.appendChild(checkbox);
   div.appendChild(p);
   li.appendChild(div);
-  // li.appendChild(img);
+
+  const edit = document.createElement('input');
+  edit.id = 'edit';
+  edit.type = 'text';
+  edit.value = task.description;
+  edit.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      editTask(task.index, edit.value);
+      li.replaceChild(div, edit);
+      window.location.reload();
+    }
+  });
+  li.addEventListener('dblclick', () => {
+    li.replaceChild(edit, div);
+  });
   document.getElementById('list').appendChild(li);
 });
