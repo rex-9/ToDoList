@@ -1,6 +1,9 @@
 import './style.css';
 import {
-  addTask, editTask, toggleTask, removeTask,
+  addTask,
+  editTask,
+  toggleTask,
+  removeTask,
 } from './modules/crud.js';
 
 const allTasks = JSON.parse(localStorage.getItem('tasks'));
@@ -8,12 +11,8 @@ let tasks = [];
 
 const paper = document.getElementById('paper');
 
-if (allTasks === null) {
+if (allTasks === null || allTasks.length === 0) {
   tasks = [];
-  if (paper.childNodes.length < 4) {
-    const footer = document.getElementById('remove');
-    paper.removeChild(footer);
-  }
 } else {
   tasks = allTasks.sort((a, b) => a.index - b.index);
   const footer = document.createElement('footer');
