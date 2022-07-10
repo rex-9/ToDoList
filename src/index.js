@@ -32,19 +32,19 @@ add.addEventListener('keydown', (e) => {
 
 const dragStart = () => {
   console.log('dragstart');
-}
+};
 const dragEnter = () => {
   console.log('dragEnter');
-}
+};
 const dragOver = () => {
   console.log('dragOver');
-}
+};
 const dragEnd = () => {
   console.log('dragEnd');
-}
+};
 const drop = () => {
   console.log('drop');
-}
+};
 
 tasks.forEach((task) => {
   const li = document.createElement('li');
@@ -91,7 +91,7 @@ tasks.forEach((task) => {
           li.replaceChild(div, edit);
         }
       }
-    })
+    });
     edit.addEventListener('keydown', (e) => {
       if (e.key === 'Enter') {
         editTask(task.index, edit.value);
