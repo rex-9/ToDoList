@@ -76,11 +76,7 @@ footer:hover {
   background-color: gainsboro;
 }
 
-svg {
-  cursor: pointer;
-}
-
-#input svg {
-  transform: scaleX(-1);
+#input span {
+  transform: rotate(90deg);
   margin-right: 13px;
 }
