@@ -23,7 +23,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open",
-    "build": "webpack"
+    "build": "webpack",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -35,5 +36,8 @@
   "bugs": {
     "url": "https://github.com/HtetNaing0814/to-do-list/issues"
   },
-  "homepage": "https://github.com/HtetNaing0814/to-do-list#readme"
+  "homepage": "https://github.com/HtetNaing0814/to-do-list#readme",
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
 }

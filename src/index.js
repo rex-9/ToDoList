@@ -30,41 +30,75 @@ add.addEventListener('keydown', (e) => {
   }
 });
 
+const dragStart = () => {
+  console.log('dragstart');
+};
+const dragEnter = () => {
+  console.log('dragEnter');
+};
+const dragOver = () => {
+  console.log('dragOver');
+};
+const dragEnd = () => {
+  console.log('dragEnd');
+};
+const drop = () => {
+  console.log('drop');
+};
+
 tasks.forEach((task) => {
   const li = document.createElement('li');
   const div = document.createElement('div');
-  div.style.cssText = 'display: flex; padding-left: 10px;';
+  div.style.cssText = 'display: flex; align-items: center; padding-left: 10px;';
   const checkbox = document.createElement('input');
   checkbox.type = 'checkbox';
   checkbox.style.cssText = 'cursor: pointer;';
   checkbox.checked = task.completed;
-  checkbox.addEventListener('change', () => {
+  checkbox.onchange = function () {
     if (checkbox.checked) {
+      console.log('checked');
       toggleTask(task.index, true);
       li.style.cssText = 'text-decoration: line-through; background-color: gainsboro;';
     } else {
       toggleTask(task.index, false);
       li.style.cssText = 'text-decoration: none; background-color: white;';
     }
-  });
+  };
   const p = document.createElement('p');
   p.innerHTML = task.description;
+  const move = document.createElement('span');
+  move.style.cssText = 'cursor: move; width: 20px;';
+  move.innerHTML += '<i class="fa-solid fa-ellipsis-vertical"></i>';
+  move.draggable = true;
+  move.addEventListener('dragstart', dragStart);
+  move.addEventListener('dragenter', dragEnter);
+  move.addEventListener('dragover', dragOver);
+  move.addEventListener('dragend', dragEnd);
+  move.addEventListener('drop', drop);
   div.appendChild(checkbox);
   div.appendChild(p);
   li.appendChild(div);
+  li.appendChild(move);
 
-  const edit = document.createElement('input');
-  edit.id = 'edit';
-  edit.type = 'text';
-  edit.value = task.description;
-  edit.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter') {
-      editTask(task.index, edit.value);
-      li.replaceChild(div, edit);
-      window.location.reload();
-    }
-  });
-  li.addEventListener('dblclick', () => {
+  p.addEventListener('dblclick', () => {
+    const edit = document.createElement('input');
+    edit.id = 'edit';
+    edit.type = 'text';
+    edit.value = task.description;
+    document.addEventListener('click', (e) => {
+      if (!edit.contains(e.target)) {
+        if (li.contains(edit)) {
+          li.replaceChild(div, edit);
+        }
+      }
+    });
+    edit.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        editTask(task.index, edit.value);
+        li.replaceChild(div, edit);
+        window.location.reload();
+      }
+    });
     li.replaceChild(edit, div);
   });
   document.getElementById('list').appendChild(li);

@@ -16,12 +16,12 @@ module.exports = {
     rules: [{
       test: /\.css$/i,
       use: ['style-loader', 'css-loader'],
-    },
-    ],
+    }],
   },
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
+    publicPath: '/to-do-list/',
   },
 };
