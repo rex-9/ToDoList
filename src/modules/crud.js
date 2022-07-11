@@ -3,15 +3,7 @@
 
 import Task from './task.js';
 
-let allTasks;
-
-if (JSON.parse(localStorage.getItem('tasks')) === null) {
-  allTasks = [];
-} else {
-  allTasks = JSON.parse(localStorage.getItem('tasks'));
-}
-
-const addTask = (description) => {
+const addTask = (description, allTasks) => {
   const storedTasks = JSON.parse(localStorage.getItem('tasks'));
   if (storedTasks === null) {
     allTasks = [];
@@ -24,19 +16,19 @@ const addTask = (description) => {
   window.location.reload();
 };
 
-const editTask = (index, description) => {
+const editTask = (index, description, allTasks) => {
   const task = allTasks.find((task) => task.index === index);
   task.description = description;
   localStorage.setItem('tasks', JSON.stringify(allTasks));
 };
 
-const toggleTask = (index, completed) => {
+const toggleTask = (index, completed, allTasks) => {
   const task = allTasks.find((task) => task.index === index);
   task.completed = completed;
   localStorage.setItem('tasks', JSON.stringify(allTasks));
 };
 
-const removeTask = () => {
+const removeTask = (allTasks) => {
   const completedTasks = [];
   allTasks.forEach((task) => {
     if (task.completed === false) {

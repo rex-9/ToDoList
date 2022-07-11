@@ -6,26 +6,32 @@ import {
   removeTask,
 } from './modules/crud.js';
 
-const allTasks = JSON.parse(localStorage.getItem('tasks'));
+export const allTasks = JSON.parse(localStorage.getItem('tasks'));
 let tasks = [];
 
 const paper = document.getElementById('paper');
 
-if (allTasks === null || allTasks.length === 0) {
-  tasks = [];
-} else {
-  tasks = allTasks.sort((a, b) => a.index - b.index);
-  const footer = document.createElement('footer');
-  footer.id = 'remove';
-  footer.innerHTML = 'Clear all completed';
-  footer.onclick = removeTask;
-  paper.appendChild(footer);
+const load = (allTasks) => {
+  if (allTasks === null || allTasks.length === 0) {
+    tasks = [];
+  } else {
+    tasks = allTasks.sort((a, b) => a.index - b.index);
+    const footer = document.createElement('footer');
+    footer.id = 'remove';
+    footer.innerHTML = 'Clear all completed';
+    footer.addEventListener('click', () => {
+      removeTask(allTasks);
+    });
+    paper.appendChild(footer);
+  }
 }
+
+load(allTasks);
 
 const add = document.getElementById('add');
 add.addEventListener('keydown', (e) => {
   if (e.key === 'Enter') {
-    addTask(add.value);
+    addTask(add.value, allTasks);
     add.value = '';
   }
 });
@@ -41,10 +47,10 @@ tasks.forEach((task) => {
   checkbox.onchange = function () {
     if (checkbox.checked) {
       console.log('checked');
-      toggleTask(task.index, true);
+      toggleTask(task.index, true, allTasks);
       li.style.cssText = 'text-decoration: line-through; background-color: gainsboro;';
     } else {
-      toggleTask(task.index, false);
+      toggleTask(task.index, false, allTasks);
       li.style.cssText = 'text-decoration: none; background-color: white;';
     }
   };
@@ -73,7 +79,7 @@ tasks.forEach((task) => {
     });
     edit.addEventListener('keydown', (e) => {
       if (e.key === 'Enter') {
-        editTask(task.index, edit.value);
+        editTask(task.index, edit.value, allTasks);
         li.replaceChild(div, edit);
         window.location.reload();
       }
