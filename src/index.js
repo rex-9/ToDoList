@@ -30,22 +30,6 @@ add.addEventListener('keydown', (e) => {
   }
 });
 
-const dragStart = () => {
-  console.log('dragstart');
-};
-const dragEnter = () => {
-  console.log('dragEnter');
-};
-const dragOver = () => {
-  console.log('dragOver');
-};
-const dragEnd = () => {
-  console.log('dragEnd');
-};
-const drop = () => {
-  console.log('drop');
-};
-
 tasks.forEach((task) => {
   const li = document.createElement('li');
   const div = document.createElement('div');
@@ -70,11 +54,6 @@ tasks.forEach((task) => {
   move.style.cssText = 'cursor: move; width: 20px;';
   move.innerHTML += '<i class="fa-solid fa-ellipsis-vertical"></i>';
   move.draggable = true;
-  move.addEventListener('dragstart', dragStart);
-  move.addEventListener('dragenter', dragEnter);
-  move.addEventListener('dragover', dragOver);
-  move.addEventListener('dragend', dragEnd);
-  move.addEventListener('drop', drop);
   div.appendChild(checkbox);
   div.appendChild(p);
   li.appendChild(div);
