@@ -1,6 +1,3 @@
-/* eslint-disable array-callback-return */
-/* eslint-disable consistent-return */
-
 import Task from './task.js';
 
 let allTasks;
@@ -46,11 +43,7 @@ const removeTask = () => {
   for (let i = 0; i < completedTasks.length; i += 1) {
     completedTasks[i].index = i;
   }
-  allTasks = allTasks.filter((task) => {
-    if (completedTasks.includes(task)) {
-      return task;
-    }
-  });
+  allTasks = completedTasks;
   localStorage.setItem('tasks', JSON.stringify(allTasks));
   window.location.reload();
 };
