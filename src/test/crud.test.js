@@ -12,15 +12,12 @@ window.location = {
   reload: jest.fn(),
 };
 
-document.body.innerHTML = `<div> <ul id="list"></li> </div>`;
+document.body.innerHTML = '<div> <ul id="list"></li> </div>';
 
 describe('Local Storage functions', () => {
   test('Add one new item to the list', () => {
     addTask('First Task', []);
     expect(JSON.parse(localStorage.getItem('tasks')).length).toBe(1);
-
-    const list = document.getElementById('list');
-    list.appendChild(document.createElement('li'));
     const lists = document.querySelectorAll('#list li');
     expect(lists).toHaveLength(1);
   });

@@ -5,6 +5,10 @@ const addTask = (description, allTasks) => {
   allTasks.push(newTask);
   localStorage.setItem('tasks', JSON.stringify(allTasks));
   window.location.reload();
+
+  const ul = document.getElementById('list');
+  const li = document.createElement('li');
+  ul.appendChild(li);
 };
 
 const editTask = (index, description, allTasks) => {
