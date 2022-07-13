@@ -4,12 +4,6 @@
 import Task from './task.js';
 
 const addTask = (description, allTasks) => {
-  const storedTasks = JSON.parse(localStorage.getItem('tasks'));
-  if (storedTasks === null) {
-    allTasks = [];
-  } else {
-    allTasks = JSON.parse(localStorage.getItem('tasks'));
-  }
   const newTask = new Task(allTasks.length, false, description);
   allTasks.push(newTask);
   localStorage.setItem('tasks', JSON.stringify(allTasks));

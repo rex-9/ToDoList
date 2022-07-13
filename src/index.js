@@ -6,13 +6,14 @@ import {
   removeTask,
 } from './modules/crud.js';
 
-export const allTasks = JSON.parse(localStorage.getItem('tasks'));
+export let allTasks = JSON.parse(localStorage.getItem('tasks'));
 let tasks = [];
 
 const paper = document.getElementById('paper');
 
-const load = (allTasks) => {
-  if (allTasks === null || allTasks.length === 0) {
+const load = (storedTasks) => {
+  if (storedTasks === null) {
+    allTasks = [];
     tasks = [];
   } else {
     tasks = allTasks.sort((a, b) => a.index - b.index);
@@ -46,7 +47,6 @@ tasks.forEach((task) => {
   checkbox.checked = task.completed;
   checkbox.onchange = function () {
     if (checkbox.checked) {
-      console.log('checked');
       toggleTask(task.index, true, allTasks);
       li.style.cssText = 'text-decoration: line-through; background-color: gainsboro;';
     } else {
