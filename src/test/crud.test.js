@@ -1,5 +1,3 @@
-// jest.mock('./crud.js')
-
 import {
   addTask,
   editTask,
@@ -62,3 +60,5 @@ describe('Local Storage functions', () => {
     expect(JSON.parse(localStorage.getItem('tasks')).length).toBe(localStorage.getItem('tasks').length - 2);
   });
 });
+
+//fkkkkkkkkkkkkkkkkkkkkkkkkkk
