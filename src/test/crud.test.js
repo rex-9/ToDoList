@@ -43,19 +43,16 @@ test('Toggle the existing item of the specific index', () => {
     });
 });
 
-// test('Remove specific items to the list', () => {
-//     const allTasks = [{
-//         index: 1,
-//         description: 'First Task',
-//         completed: false
-//     }, {
-//         index: 2,
-//         description: 'Second Task',
-//         completed: false
-//     }];
-//     // console.log(allTasks);
-//     // Object.entries(allTasks)
-//     console.log(auto instanceof allTasks);
-//     removeTask('first task', allTasks);
-//     expect(JSON.parse(localStorage.getItem('tasks')).length).toBe(localStorage.getItem('tasks').length - 2);
-// });
+test('Remove specific items to the list', () => {
+    const allTasks = [{
+        index: 1,
+        description: 'First Task',
+        completed: false
+    }, {
+        index: 2,
+        description: 'Second Task',
+        completed: false
+    }];
+    removeTask('first task', allTasks);
+    expect(JSON.parse(localStorage.getItem('tasks')).length).toBe(localStorage.getItem('tasks').length - 2);
+});

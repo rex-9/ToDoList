@@ -24,19 +24,15 @@ const toggleTask = (index, completed, allTasks) => {
 
 const removeTask = (allTasks) => {
   const completedTasks = [];
-  allTasks.forEach((task) => {
-    if (task.completed === false) {
-      completedTasks.push(task);
+  for (let i = 0; i < allTasks.length; i++) {
+    if (allTasks[i].completed === false) {
+      completedTasks.push(allTasks[i]);
     }
-  });
-  for (let i = 0; i < completedTasks.length; i += 1) {
-    completedTasks[i].index = i;
   }
-  allTasks = allTasks.filter((task) => {
-    if (completedTasks.includes(task)) {
-      return task;
-    }
-  });
+  for (let i = 0; i < completedTasks.length; i += 1) {
+    completedTasks[i].index = i + 1;
+  }
+  allTasks = completedTasks;
   localStorage.setItem('tasks', JSON.stringify(allTasks));
   window.location.reload();
 };
