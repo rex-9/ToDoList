@@ -24,7 +24,7 @@
   "private": true,
   "scripts": {
     "test": "jest",
-    "watch": "jest --watch",
+    "watch": "jest --watchAll",
     "start": "webpack serve --open",
     "build": "webpack",
     "deploy": "gh-pages -d dist"
