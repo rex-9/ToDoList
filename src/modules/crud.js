@@ -1,6 +1,3 @@
-/* eslint-disable array-callback-return */
-/* eslint-disable consistent-return */
-
 import Task from './task.js';
 
 const addTask = (description, allTasks) => {
@@ -24,7 +21,7 @@ const toggleTask = (index, completed, allTasks) => {
 
 const removeTask = (allTasks) => {
   const completedTasks = [];
-  for (let i = 0; i < allTasks.length; i++) {
+  for (let i = 0; i < allTasks.length; i += 1) {
     if (allTasks[i].completed === false) {
       completedTasks.push(allTasks[i]);
     }
