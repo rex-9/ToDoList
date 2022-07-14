@@ -2,7 +2,7 @@ import {
   addTask,
   editTask,
   toggleTask,
-  removeTask,
+  clearAllCompletedTask,
 } from '../modules/crud.js';
 
 delete window.location;
@@ -46,7 +46,7 @@ describe('Local Storage functions', () => {
     });
   });
 
-  test('Remove specific items to the list', () => {
+  test('Clear all completed items from the list', () => {
     const allTasks = [{
       index: 1,
       description: 'First Task',
@@ -56,9 +56,9 @@ describe('Local Storage functions', () => {
       description: 'Second Task',
       completed: false,
     }];
-    removeTask('first task', allTasks);
+    clearAllCompletedTask('first task', allTasks);
     expect(JSON.parse(localStorage.getItem('tasks')).length).toBe(localStorage.getItem('tasks').length - 2);
   });
 });
 
-// fkkkkkkkkkkkkkkkkkkkkkkkkkk
+// fkkkkkkkkkkkkkkkkkkkkkkkkk

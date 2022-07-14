@@ -23,7 +23,7 @@ const toggleTask = (index, completed, allTasks) => {
   localStorage.setItem('tasks', JSON.stringify(allTasks));
 };
 
-const removeTask = (allTasks) => {
+const clearAllCompletedTask = (allTasks) => {
   const completedTasks = [];
   for (let i = 0; i < allTasks.length; i += 1) {
     if (allTasks[i].completed === false) {
@@ -42,5 +42,5 @@ export {
   addTask,
   editTask,
   toggleTask,
-  removeTask,
+  clearAllCompletedTask,
 };
