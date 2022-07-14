@@ -6,7 +6,7 @@
 import './style.css';
 
 import {
-  removeTask,
+  clearAllCompletedTask,
 } from './modules/crud.js';
 
 import { add, build } from './modules/dom.js';
@@ -26,7 +26,7 @@ const load = (storedTasks) => {
     footer.id = 'remove';
     footer.innerHTML = 'Clear all completed';
     footer.addEventListener('click', () => {
-      removeTask(allTasks);
+      clearAllCompletedTask(allTasks);
     });
     paper.appendChild(footer);
   }
