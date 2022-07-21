@@ -19,7 +19,7 @@
     "webpack-dev-server": "^4.9.3"
   },
   "name": "to-do-list",
-  "description": "",
+  "description": "To Do List",
   "version": "1.0.0",
   "private": true,
   "scripts": {
