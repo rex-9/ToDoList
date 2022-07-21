@@ -29,9 +29,14 @@ To get a local copy up and running follow these simple example steps.
 Here is the online version of [To Do List](https://htetnaing0814.github.io/to-do-list/)
 
 ## Author
-👤 - Github: [@HtetNaing0814](https://github.com/HtetNaing0814/to-do-list/)
+👤 - Github: [@HtetNaing0814](https://github.com/HtetNaing0814/)
+👤 - LinkedIn: [Htet Naing](https://www.linkedin.com/in/htet-naing-b4882a1aa/)
+👤 - Facebook: [Htet Naing](https://www.facebook.com/rexsoul1819)
+👤 - Angelist: [Htet Naing](https://angel.co/u/htet-naing-2)
 
-## 🤝 Contributing
+## 🤝 Contributor
+👤 - Github: [@Godfrey-Alimony](https://github.com/Godfrey-Alimony/)
+
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check [issue page](https://github.com/HtetNaing0814/to-do-list/issues).
