@@ -1,14 +1,19 @@
-# Project Name
-To Do List
+# To Do List
+
+> To Do List provides you with functionalities such as:
+> - adding a Todo to the list
+> - removing a Todo from the list
+> - editing a Todo in the list
+> - checking whether completed or not a Todo in the list
 
 ## Built With
 - HTML
 - CSS
 - JS
 
-## Live Demo
+## Screenshot
 
-[To Do List](https://htetnaing0814.github.io/to-do-list/)
+![ToDoList](./src/assets/ToDoList.png)
 
 ## Getting Started
 
@@ -16,7 +21,7 @@ To get a local copy up and running:
 
 1. Clone this repository or download the zip folder:
 
-**``git clone https://github.com/HtetNaing0814/to-do-list.git``**
+**``git clone https://github.com/rex-9/ToDoList.git``**
 
 2. Navigate to the location of the folder in your machine:
 
@@ -26,20 +31,17 @@ To get a local copy up and running follow these simple example steps.
 
 ### Deployment
 
-Here is the online version of [To Do List](https://htetnaing0814.github.io/to-do-list/)
+Here is the online version of [To Do List](https://rex-9.github.io/ToDoList/)
 
 ## Author
-👤 - Github: [@HtetNaing0814](https://github.com/HtetNaing0814/)
-👤 - LinkedIn: [Htet Naing](https://www.linkedin.com/in/htet-naing-b4882a1aa/)
-👤 - Facebook: [Htet Naing](https://www.facebook.com/rexsoul1819)
-👤 - Angelist: [Htet Naing](https://angel.co/u/htet-naing-2)
-
-## 🤝 Contributor
-👤 - Github: [@Godfrey-Alimony](https://github.com/Godfrey-Alimony/)
+👤 - Github: [rex-9](https://github.com/rex-9/)
+👤 - LinkedIn: [rex9](https://www.linkedin.com/in/rex9/)
+👤 - Angelist: [rex9](https://angel.co/u/rex9)
+👤 - Facebook: [Htet Naing](https://www.facebook.com/htetnaing0814)
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check [issue page](https://github.com/HtetNaing0814/to-do-list/issues).
+Feel free to check [issue page](https://github.com/rex-9/ToDoList/issues).
 
 ## Show your support
 Give a ⭐️ if you like this project!

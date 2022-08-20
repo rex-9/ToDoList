@@ -22,7 +22,7 @@ const build = (tasks) => {
   tasks.forEach((task) => {
     const li = document.createElement('li');
     const div = document.createElement('div');
-    div.style.cssText = 'display: flex; align-items: center; padding-left: 10px;';
+    div.style.cssText = 'display: flex; align-items: center; padding-left: 10px; width: 100%;';
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
     checkbox.style.cssText = 'cursor: pointer;';
@@ -30,7 +30,7 @@ const build = (tasks) => {
     checkbox.onchange = function checked() {
       if (checkbox.checked) {
         toggleTask(task.index, true, allTasks);
-        li.style.cssText = 'text-decoration: line-through; background-color: gainsboro;';
+        li.style.cssText = 'text-decoration: line-through; color: gray; background-color: gainsboro;';
       } else {
         toggleTask(task.index, false, allTasks);
         li.style.cssText = 'text-decoration: none; background-color: white;';
@@ -38,6 +38,7 @@ const build = (tasks) => {
     };
     const p = document.createElement('p');
     p.innerHTML = task.description;
+    p.style.cssText = 'width: 100%;';
     const move = document.createElement('span');
     move.style.cssText = 'cursor: move; width: 20px;';
     move.innerHTML += '<i class="fa-solid fa-ellipsis-vertical"></i>';
@@ -51,6 +52,7 @@ const build = (tasks) => {
       const edit = document.createElement('input');
       edit.id = 'edit';
       edit.type = 'text';
+      edit.style.cssText = 'color: lightgreen';
       edit.value = task.description;
       document.addEventListener('click', (e) => {
         if (!edit.contains(e.target)) {

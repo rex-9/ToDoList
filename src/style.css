@@ -1,6 +1,6 @@
 body {
   background-color: azure;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Quicksand', Times, serif;
   font-size: 18px;
 }
 
@@ -23,6 +23,13 @@ body {
   align-items: center;
   padding: 10px;
   border-bottom: 1px solid gainsboro;
+}
+
+#header header {
+  font-size: 25px;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
 }
 
 #input {
