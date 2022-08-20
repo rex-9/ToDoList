@@ -18,7 +18,7 @@
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.9.3"
   },
-  "name": "to-do-list",
+  "name": "todolist",
   "description": "To Do List",
   "version": "1.0.0",
   "private": true,
@@ -31,15 +31,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HtetNaing0814/to-do-list.git"
+    "url": "git+https://github.com/HtetNaing0814/todolist.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/HtetNaing0814/to-do-list/issues"
+    "url": "https://github.com/HtetNaing0814/todolist/issues"
   },
-  "homepage": "https://github.com/HtetNaing0814/to-do-list#readme",
+  "homepage": "https://github.com/HtetNaing0814/todolist#readme",
   "dependencies": {
     "gh-pages": "^4.0.0",
     "jest": "^28.1.2"
