@@ -34,9 +34,9 @@ To get a local copy up and running follow these simple example steps.
 Here is the online version of [To Do List](https://rex-9.github.io/ToDoList/)
 
 ## Author
-👤 - Github: [rex-9](https://github.com/rex-9/)
-👤 - LinkedIn: [rex9](https://www.linkedin.com/in/rex9/)
-👤 - Angelist: [rex9](https://angel.co/u/rex9)
+👤 - Github: [rex-9](https://github.com/rex-9/)<br>
+👤 - LinkedIn: [rex9](https://www.linkedin.com/in/rex9/)<br>
+👤 - Angelist: [rex9](https://angel.co/u/rex9)<br>
 👤 - Facebook: [Htet Naing](https://www.facebook.com/htetnaing0814)
 
 Contributions, issues, and feature requests are welcome!
