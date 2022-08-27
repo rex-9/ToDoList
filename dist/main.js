@@ -16,7 +16,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body {\\r\\n  background-color: azure;\\r\\n  font-family: 'Quicksand', Times, serif;\\r\\n  font-size: 18px;\\r\\n}\\r\\n\\r\\n#card {\\r\\n  background-color: white;\\r\\n  display: flex;\\r\\n  justify-content: center;\\r\\n  border: 2px solid gainsboro;\\r\\n  margin: 5% 20% 5% 20%;\\r\\n  box-shadow: 5px 8px 8px #888;\\r\\n}\\r\\n\\r\\n#paper {\\r\\n  width: 100%;\\r\\n}\\r\\n\\r\\n#header {\\r\\n  display: flex;\\r\\n  justify-content: space-between;\\r\\n  align-items: center;\\r\\n  padding: 10px;\\r\\n  border-bottom: 1px solid gainsboro;\\r\\n}\\r\\n\\r\\n#header header {\\r\\n  font-size: 25px;\\r\\n  width: 100%;\\r\\n  font-weight: bold;\\r\\n  text-align: center;\\r\\n}\\r\\n\\r\\n#input {\\r\\n  display: flex;\\r\\n  justify-content: space-between;\\r\\n  align-items: center;\\r\\n  border-bottom: 1px solid gainsboro;\\r\\n}\\r\\n\\r\\n#add,\\r\\n#edit {\\r\\n  width: 97.7%;\\r\\n  border: 0;\\r\\n  padding: 15px;\\r\\n  font-size: 18px;\\r\\n  font-style: italic;\\r\\n}\\r\\n\\r\\n#add,\\r\\n#edit:focus {\\r\\n  outline-width: 0;\\r\\n}\\r\\n\\r\\nul {\\r\\n  margin-top: 0;\\r\\n  margin-bottom: 0;\\r\\n  list-style-type: none;\\r\\n  padding: 0;\\r\\n}\\r\\n\\r\\nli {\\r\\n  display: flex;\\r\\n  justify-content: space-between;\\r\\n  align-items: center;\\r\\n  padding-left: 10px;\\r\\n  border-bottom: 1px solid gainsboro;\\r\\n}\\r\\n\\r\\np {\\r\\n  margin-left: 10px;\\r\\n}\\r\\n\\r\\nfooter {\\r\\n  background-color: ghostwhite;\\r\\n  cursor: pointer;\\r\\n  text-align: center;\\r\\n  padding: 20px;\\r\\n}\\r\\n\\r\\nfooter:hover {\\r\\n  background-color: gainsboro;\\r\\n}\\r\\n\\r\\n#input span {\\r\\n  transform: rotate(90deg);\\r\\n  margin-right: 13px;\\r\\n}\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://todolist/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);\n// Imports\n\n\n\nvar ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./assets/DS-DIGIB.TTF */ \"./src/assets/DS-DIGIB.TTF\"), __webpack_require__.b);\nvar ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ./assets/light-ring.jpg */ \"./src/assets/light-ring.jpg\"), __webpack_require__.b);\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);\nvar ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"@font-face {\\r\\n  font-family: 'Digital';\\r\\n  src: local('Digital'), url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \") format('woff');\\r\\n}\\r\\n\\r\\nbody {\\r\\n  background: url(\" + ___CSS_LOADER_URL_REPLACEMENT_1___ + \");\\r\\n  background-repeat: no-repeat;\\r\\n  background-size: cover;\\r\\n  background-attachment: fixed;\\r\\n  font-family: 'Quicksand', Times, serif;\\r\\n  font-size: 18px;\\r\\n}\\r\\n\\r\\n#card {\\r\\n  background: linear-gradient(to right, rgb(29, 28, 31), #000, #2c2424);\\r\\n  display: flex;\\r\\n  justify-content: center;\\r\\n  margin: 5% 20% 5% 20%;\\r\\n  font-family: 'Digital', serif;\\r\\n  color: white;\\r\\n  text-shadow:\\r\\n    0 0 8px #fff,\\r\\n    0 0 12px pink,\\r\\n    0 0 16px yellow,\\r\\n    0 0 20px red;\\r\\n  box-shadow:\\r\\n    0 0 8px #fff,\\r\\n    5px 8px 12px pink,\\r\\n    5px 8px 16px yellow,\\r\\n    5px 8px 20px red;\\r\\n}\\r\\n\\r\\n#paper {\\r\\n  width: 100%;\\r\\n}\\r\\n\\r\\n#header {\\r\\n  display: flex;\\r\\n  justify-content: space-between;\\r\\n  align-items: center;\\r\\n  padding: 10px;\\r\\n  border-bottom: 1px solid gainsboro;\\r\\n}\\r\\n\\r\\n#header header {\\r\\n  font-size: 30px;\\r\\n  width: 100%;\\r\\n  padding: 5px 0;\\r\\n  font-weight: bold;\\r\\n  text-align: center;\\r\\n}\\r\\n\\r\\n#input {\\r\\n  display: flex;\\r\\n  justify-content: space-between;\\r\\n  align-items: center;\\r\\n  border-bottom: 1px solid gainsboro;\\r\\n}\\r\\n\\r\\n#add {\\r\\n  font-family: 'Digital', Courier, monospace;\\r\\n  width: 100%;\\r\\n  height: 50px;\\r\\n  font-size: 40px;\\r\\n  border: 0;\\r\\n  border-radius: 8px;\\r\\n  background-color: #0d3f35;\\r\\n  color: white;\\r\\n  text-shadow:\\r\\n    0 0 6px #fff,\\r\\n    0 0 8px yellow,\\r\\n    0 0 10px orange;\\r\\n  padding: 7px;\\r\\n  box-shadow:\\r\\n    0 0 6px #fff,\\r\\n    0 0 8px lightgreen,\\r\\n    0 0 10px #0d3f35;\\r\\n}\\r\\n\\r\\n#edit {\\r\\n  width: 100%;\\r\\n  border: 0;\\r\\n  font-family: 'Digital', Courier, monospace;\\r\\n  font-size: 25px;\\r\\n  padding: 7px;\\r\\n  background-color: black;\\r\\n  color: gray;\\r\\n  height: 40px;\\r\\n}\\r\\n\\r\\n#add,\\r\\n#edit:focus {\\r\\n  outline-width: 0;\\r\\n}\\r\\n\\r\\nspan {\\r\\n  margin-left: 20px;\\r\\n}\\r\\n\\r\\nul {\\r\\n  margin-top: 0;\\r\\n  margin-bottom: 0;\\r\\n  list-style-type: none;\\r\\n  padding: 0;\\r\\n}\\r\\n\\r\\nli {\\r\\n  display: flex;\\r\\n  justify-content: space-between;\\r\\n  align-items: center;\\r\\n  padding-left: 10px;\\r\\n  border-bottom: 1px solid gainsboro;\\r\\n}\\r\\n\\r\\np {\\r\\n  margin-left: 10px;\\r\\n  font-size: 25px;\\r\\n}\\r\\n\\r\\nfooter {\\r\\n  font-size: 25px;\\r\\n  cursor: pointer;\\r\\n  text-align: center;\\r\\n  padding: 20px;\\r\\n}\\r\\n\\r\\nfooter:hover {\\r\\n  background-color: black;\\r\\n  text-shadow:\\r\\n    0 0 6px black,\\r\\n    0 0 8px black,\\r\\n    0 0 10px black;\\r\\n}\\r\\n\\r\\n#input span {\\r\\n  transform: rotate(90deg);\\r\\n  margin-right: 13px;\\r\\n}\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://todolist/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -27,6 +27,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module) => {
 
 eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\nmodule.exports = function (cssWithMappingToString) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = \"\";\n      var needLayer = typeof item[5] !== \"undefined\";\n\n      if (item[4]) {\n        content += \"@supports (\".concat(item[4], \") {\");\n      }\n\n      if (item[2]) {\n        content += \"@media \".concat(item[2], \" {\");\n      }\n\n      if (needLayer) {\n        content += \"@layer\".concat(item[5].length > 0 ? \" \".concat(item[5]) : \"\", \" {\");\n      }\n\n      content += cssWithMappingToString(item);\n\n      if (needLayer) {\n        content += \"}\";\n      }\n\n      if (item[2]) {\n        content += \"}\";\n      }\n\n      if (item[4]) {\n        content += \"}\";\n      }\n\n      return content;\n    }).join(\"\");\n  }; // import a list of modules into the list\n\n\n  list.i = function i(modules, media, dedupe, supports, layer) {\n    if (typeof modules === \"string\") {\n      modules = [[null, modules, undefined]];\n    }\n\n    var alreadyImportedModules = {};\n\n    if (dedupe) {\n      for (var k = 0; k < this.length; k++) {\n        var id = this[k][0];\n\n        if (id != null) {\n          alreadyImportedModules[id] = true;\n        }\n      }\n    }\n\n    for (var _k = 0; _k < modules.length; _k++) {\n      var item = [].concat(modules[_k]);\n\n      if (dedupe && alreadyImportedModules[item[0]]) {\n        continue;\n      }\n\n      if (typeof layer !== \"undefined\") {\n        if (typeof item[5] === \"undefined\") {\n          item[5] = layer;\n        } else {\n          item[1] = \"@layer\".concat(item[5].length > 0 ? \" \".concat(item[5]) : \"\", \" {\").concat(item[1], \"}\");\n          item[5] = layer;\n        }\n      }\n\n      if (media) {\n        if (!item[2]) {\n          item[2] = media;\n        } else {\n          item[1] = \"@media \".concat(item[2], \" {\").concat(item[1], \"}\");\n          item[2] = media;\n        }\n      }\n\n      if (supports) {\n        if (!item[4]) {\n          item[4] = \"\".concat(supports);\n        } else {\n          item[1] = \"@supports (\".concat(item[4], \") {\").concat(item[1], \"}\");\n          item[4] = supports;\n        }\n      }\n\n      list.push(item);\n    }\n  };\n\n  return list;\n};\n\n//# sourceURL=webpack://todolist/./node_modules/css-loader/dist/runtime/api.js?");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    options = {};\n  }\n\n  if (!url) {\n    return url;\n  }\n\n  url = String(url.__esModule ? url.default : url); // If url is already wrapped in quotes, remove them\n\n  if (/^['\"].*['\"]$/.test(url)) {\n    url = url.slice(1, -1);\n  }\n\n  if (options.hash) {\n    url += options.hash;\n  } // Should url be wrapped?\n  // See https://drafts.csswg.org/css-values-3/#urls\n\n\n  if (/[\"'() \\t\\n]|(%20)/.test(url) || options.needQuotes) {\n    return \"\\\"\".concat(url.replace(/\"/g, '\\\\\"').replace(/\\n/g, \"\\\\n\"), \"\\\"\");\n  }\n\n  return url;\n};\n\n//# sourceURL=webpack://todolist/./node_modules/css-loader/dist/runtime/getUrl.js?");
 
 /***/ }),
 
@@ -136,7 +146,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"add\": () => (/* binding */ add),\n/* harmony export */   \"build\": () => (/* binding */ build)\n/* harmony export */ });\n/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../index.js */ \"./src/index.js\");\n/* harmony import */ var _crud_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./crud.js */ \"./src/modules/crud.js\");\n/* eslint-disable import/no-cycle */\n\n\n\n\n\nconst add = () => {\n  const add = document.getElementById('add');\n  add.addEventListener('keydown', (e) => {\n    if (e.key === 'Enter') {\n      (0,_crud_js__WEBPACK_IMPORTED_MODULE_1__.addTask)(add.value, _index_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n      add.value = '';\n    }\n  });\n};\n\nconst build = (tasks) => {\n  tasks.forEach((task) => {\n    const li = document.createElement('li');\n    const div = document.createElement('div');\n    div.style.cssText = 'display: flex; align-items: center; padding-left: 10px; width: 100%;';\n    const checkbox = document.createElement('input');\n    checkbox.type = 'checkbox';\n    checkbox.style.cssText = 'cursor: pointer;';\n    checkbox.checked = task.completed;\n    checkbox.onchange = function checked() {\n      if (checkbox.checked) {\n        (0,_crud_js__WEBPACK_IMPORTED_MODULE_1__.toggleTask)(task.index, true, _index_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n        li.style.cssText = 'text-decoration: line-through; color: gray; background-color: gainsboro;';\n      } else {\n        (0,_crud_js__WEBPACK_IMPORTED_MODULE_1__.toggleTask)(task.index, false, _index_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n        li.style.cssText = 'text-decoration: none; background-color: white;';\n      }\n    };\n    const p = document.createElement('p');\n    p.innerHTML = task.description;\n    p.style.cssText = 'width: 100%;';\n    const move = document.createElement('span');\n    move.style.cssText = 'cursor: move; width: 20px;';\n    move.innerHTML += '<i class=\"fa-solid fa-ellipsis-vertical\"></i>';\n    move.draggable = true;\n    div.appendChild(checkbox);\n    div.appendChild(p);\n    li.appendChild(div);\n    li.appendChild(move);\n\n    p.addEventListener('dblclick', () => {\n      const edit = document.createElement('input');\n      edit.id = 'edit';\n      edit.type = 'text';\n      edit.style.cssText = 'color: lightgreen';\n      edit.value = task.description;\n      document.addEventListener('click', (e) => {\n        if (!edit.contains(e.target)) {\n          if (li.contains(edit)) {\n            li.replaceChild(div, edit);\n          }\n        }\n      });\n      edit.addEventListener('keydown', (e) => {\n        if (e.key === 'Enter') {\n          (0,_crud_js__WEBPACK_IMPORTED_MODULE_1__.editTask)(task.index, edit.value, _index_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n          li.replaceChild(div, edit);\n          window.location.reload();\n        }\n      });\n      li.replaceChild(edit, div);\n    });\n    document.getElementById('list').appendChild(li);\n  });\n};\n\n\n\n//# sourceURL=webpack://todolist/./src/modules/dom.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"add\": () => (/* binding */ add),\n/* harmony export */   \"build\": () => (/* binding */ build)\n/* harmony export */ });\n/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../index.js */ \"./src/index.js\");\n/* harmony import */ var _crud_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./crud.js */ \"./src/modules/crud.js\");\n/* eslint-disable import/no-cycle */\n\n\n\n\n\nconst add = () => {\n  const add = document.getElementById('add');\n  add.addEventListener('keydown', (e) => {\n    if (e.key === 'Enter') {\n      (0,_crud_js__WEBPACK_IMPORTED_MODULE_1__.addTask)(add.value, _index_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n      add.value = '';\n    }\n  });\n};\n\nconst build = (tasks) => {\n  tasks.forEach((task) => {\n    const li = document.createElement('li');\n    li.style.cssText = 'padding: 0;';\n    const div = document.createElement('div');\n    div.style.cssText = 'display: flex; align-items: center; width: 100%; padding-left: 15px;';\n    const checkbox = document.createElement('input');\n    checkbox.type = 'checkbox';\n    checkbox.style.cssText = 'cursor: pointer;';\n    checkbox.checked = task.completed;\n    checkbox.onchange = function checked() {\n      if (checkbox.checked) {\n        (0,_crud_js__WEBPACK_IMPORTED_MODULE_1__.toggleTask)(task.index, true, _index_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n        li.style.cssText = 'text-decoration: line-through; color: gray; background-color: gainsboro; padding: 0;';\n      } else {\n        (0,_crud_js__WEBPACK_IMPORTED_MODULE_1__.toggleTask)(task.index, false, _index_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n        li.style.cssText = 'text-decoration: none; padding: 0;';\n      }\n    };\n    const p = document.createElement('p');\n    p.innerHTML = task.description;\n    p.style.cssText = 'width: 100%;';\n    const move = document.createElement('span');\n    move.style.cssText = 'cursor: move; width: 20px;';\n    move.innerHTML += '<i class=\"fa-solid fa-ellipsis-vertical\"></i>';\n    move.draggable = true;\n    div.appendChild(checkbox);\n    div.appendChild(p);\n    li.appendChild(div);\n    li.appendChild(move);\n\n    p.addEventListener('dblclick', () => {\n      const edit = document.createElement('input');\n      edit.id = 'edit';\n      edit.type = 'text';\n      edit.value = task.description;\n      document.addEventListener('click', (e) => {\n        if (!edit.contains(e.target)) {\n          if (li.contains(edit)) {\n            li.replaceChild(div, edit);\n          }\n        }\n      });\n      edit.addEventListener('keydown', (e) => {\n        if (e.key === 'Enter') {\n          (0,_crud_js__WEBPACK_IMPORTED_MODULE_1__.editTask)(task.index, edit.value, _index_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n          li.replaceChild(div, edit);\n          window.location.reload();\n        }\n      });\n      li.replaceChild(edit, div);\n    });\n    document.getElementById('list').appendChild(li);\n  });\n};\n\n\n\n//# sourceURL=webpack://todolist/./src/modules/dom.js?");
 
 /***/ }),
 
@@ -147,6 +157,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Task)\n/* harmony export */ });\nclass Task {\n  constructor(index, completed, description) {\n    this.index = index + 1;\n    this.completed = completed;\n    this.description = description;\n  }\n}\n\n//# sourceURL=webpack://todolist/./src/modules/task.js?");
+
+/***/ }),
+
+/***/ "./src/assets/DS-DIGIB.TTF":
+/*!*********************************!*\
+  !*** ./src/assets/DS-DIGIB.TTF ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"81b4bd9230069b72f5e8.TTF\";\n\n//# sourceURL=webpack://todolist/./src/assets/DS-DIGIB.TTF?");
+
+/***/ }),
+
+/***/ "./src/assets/light-ring.jpg":
+/*!***********************************!*\
+  !*** ./src/assets/light-ring.jpg ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"52e5d9910d13b3a7cd09.jpg\";\n\n//# sourceURL=webpack://todolist/./src/assets/light-ring.jpg?");
 
 /***/ })
 
@@ -176,6 +206,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -201,6 +234,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -215,6 +260,52 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"main": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */

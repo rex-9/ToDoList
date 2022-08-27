@@ -1,16 +1,34 @@
+@font-face {
+  font-family: 'Digital';
+  src: local('Digital'), url(./assets/DS-DIGIB.TTF) format('woff');
+}
+
 body {
-  background-color: azure;
+  background: url('./assets/light-ring.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   font-family: 'Quicksand', Times, serif;
   font-size: 18px;
 }
 
 #card {
-  background-color: white;
+  background: linear-gradient(to right, rgb(29, 28, 31), #000, #2c2424);
   display: flex;
   justify-content: center;
-  border: 2px solid gainsboro;
   margin: 5% 20% 5% 20%;
-  box-shadow: 5px 8px 8px #888;
+  font-family: 'Digital', serif;
+  color: white;
+  text-shadow:
+    0 0 8px #fff,
+    0 0 12px pink,
+    0 0 16px yellow,
+    0 0 20px red;
+  box-shadow:
+    0 0 8px #fff,
+    5px 8px 12px pink,
+    5px 8px 16px yellow,
+    5px 8px 20px red;
 }
 
 #paper {
@@ -26,8 +44,9 @@ body {
 }
 
 #header header {
-  font-size: 25px;
+  font-size: 30px;
   width: 100%;
+  padding: 5px 0;
   font-weight: bold;
   text-align: center;
 }
@@ -39,18 +58,44 @@ body {
   border-bottom: 1px solid gainsboro;
 }
 
-#add,
-#edit {
-  width: 97.7%;
+#add {
+  font-family: 'Digital', Courier, monospace;
+  width: 100%;
+  height: 50px;
+  font-size: 40px;
   border: 0;
-  padding: 15px;
-  font-size: 18px;
-  font-style: italic;
+  border-radius: 8px;
+  background-color: #0d3f35;
+  color: white;
+  text-shadow:
+    0 0 6px #fff,
+    0 0 8px yellow,
+    0 0 10px orange;
+  padding: 7px;
+  box-shadow:
+    0 0 6px #fff,
+    0 0 8px lightgreen,
+    0 0 10px #0d3f35;
+}
+
+#edit {
+  width: 100%;
+  border: 0;
+  font-family: 'Digital', Courier, monospace;
+  font-size: 25px;
+  padding: 7px;
+  background-color: black;
+  color: gray;
+  height: 40px;
 }
 
 #add,
 #edit:focus {
   outline-width: 0;
+}
+
+span {
+  margin-left: 20px;
 }
 
 ul {
@@ -70,17 +115,22 @@ li {
 
 p {
   margin-left: 10px;
+  font-size: 25px;
 }
 
 footer {
-  background-color: ghostwhite;
+  font-size: 25px;
   cursor: pointer;
   text-align: center;
   padding: 20px;
 }
 
 footer:hover {
-  background-color: gainsboro;
+  background-color: black;
+  text-shadow:
+    0 0 6px black,
+    0 0 8px black,
+    0 0 10px black;
 }
 
 #input span {

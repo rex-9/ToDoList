@@ -21,8 +21,9 @@ const add = () => {
 const build = (tasks) => {
   tasks.forEach((task) => {
     const li = document.createElement('li');
+    li.style.cssText = 'padding: 0;';
     const div = document.createElement('div');
-    div.style.cssText = 'display: flex; align-items: center; padding-left: 10px; width: 100%;';
+    div.style.cssText = 'display: flex; align-items: center; width: 100%; padding-left: 15px;';
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
     checkbox.style.cssText = 'cursor: pointer;';
@@ -30,10 +31,10 @@ const build = (tasks) => {
     checkbox.onchange = function checked() {
       if (checkbox.checked) {
         toggleTask(task.index, true, allTasks);
-        li.style.cssText = 'text-decoration: line-through; color: gray; background-color: gainsboro;';
+        li.style.cssText = 'text-decoration: line-through; color: gray; background-color: gainsboro; padding: 0;';
       } else {
         toggleTask(task.index, false, allTasks);
-        li.style.cssText = 'text-decoration: none; background-color: white;';
+        li.style.cssText = 'text-decoration: none; padding: 0;';
       }
     };
     const p = document.createElement('p');
@@ -52,7 +53,6 @@ const build = (tasks) => {
       const edit = document.createElement('input');
       edit.id = 'edit';
       edit.type = 'text';
-      edit.style.cssText = 'color: lightgreen';
       edit.value = task.description;
       document.addEventListener('click', (e) => {
         if (!edit.contains(e.target)) {

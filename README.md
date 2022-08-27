@@ -10,6 +10,7 @@
 - HTML
 - CSS
 - JS
+- Webpack
 
 ## Screenshot
 
